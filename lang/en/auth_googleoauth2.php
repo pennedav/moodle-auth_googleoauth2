@@ -112,4 +112,5 @@ $string['noaccountyet'] = 'You do not have permission to use the site yet. Pleas
 $string['unknownfirstname'] = 'Unknown Firstname';
 $string['unknownlastname'] = 'Unknown Lastname';
 $string['google_nonalloweddomain'] = 'Google sign-in is limited to students at other institutions. Please go back to the Moodle home page and log in with your Royals username and password.';
+$string['emu_gbe_loginmessage'] = '<strong>Goshen, Bluffton, or Collaborative MBA students should use Google to login.</strong><br>If you are an EMU student, use your Royal username and password instead.';
 
