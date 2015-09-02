@@ -27,13 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->dirroot . '/auth/googleoauth2/vendor/autoload.php');
 
 function googleoauth2_html_button($authurl, $providerdisplaystyle, $provider) {
-        return '<a class="singinprovider" href="' . $authurl . '" style="' . $providerdisplaystyle .'">
-                  <div class="button-fill ' . $provider->sskstyle . '">
-                    <div class="button-text">' . $provider->readablename . '</div>
-                    <div class="button-inside">
-                      <div class="inside-text">' . get_string('login', 'auth_googleoauth2') . '</div>
-                    </div>
-                  </div></a>';
+        return '<a class="singinprovider button-text button-fill ' . $provider->sskstyle . '" href="' . $authurl . '" style="' . $providerdisplaystyle .'">' . $provider->readablename . ' ' . get_string('login', 'auth_googleoauth2') . '</a>';
 }
 
 /**
