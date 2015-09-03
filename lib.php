@@ -27,7 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->dirroot . '/auth/googleoauth2/vendor/autoload.php');
 
 function googleoauth2_html_button($authurl, $providerdisplaystyle, $provider) {
-        return '<a class="singinprovider button-text button-fill ' . $provider->sskstyle . '" href="' . $authurl . '" style="' . $providerdisplaystyle .'">' . $provider->readablename . ' ' . get_string('login', 'auth_googleoauth2') . '</a>';
+    $extra = '';
+    if ($provider->isenabled() && $provider->name == 'google') {
+        $extra .= '<p id="emu_gbe_loginmessage">' . get_string('emu_gbe_loginmessage', 'auth_googleoauth2') . '</p>';
+    }
+    return $extra . '<a class="singinprovider button-text button-fill ' . $provider->sskstyle . '" href="' . $authurl . '" style="' . $providerdisplaystyle .'">' . $provider->readablename . ' ' . get_string('login', 'auth_googleoauth2') . '</a>';
 }
 
 /**

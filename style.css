@@ -125,3 +125,15 @@
     -ms-transform: translateX(50%);
     transform: translateX(50%);
 }
+p#emu_gbe_loginmessage {
+    padding: 3em 0 0 0;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.7em;
+}
+@media screen and (max-width: 420px) {
+    p#emu_gbe_loginmessage {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
