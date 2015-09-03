@@ -111,5 +111,5 @@ $string['signinwithanaccount'] = 'Log in with:';
 $string['noaccountyet'] = 'You do not have permission to use the site yet. Please contact your administrator and ask them to activate your account.';
 $string['unknownfirstname'] = 'Unknown Firstname';
 $string['unknownlastname'] = 'Unknown Lastname';
-$string['google_nonalloweddomain'] = 'Users on the domain \'{$a->domain}\' are not permitted to gain authenticated access to this site.';
+$string['google_nonalloweddomain'] = 'Google sign-in is limited to students at other institutions. Please go back to the Moodle home page and log in with your Royals username and password.';
 
